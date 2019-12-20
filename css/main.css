@@ -1,0 +1,690 @@
+*
+{
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+
+
+	--color-dark: #1A1A1A;
+	--color-purple: #2D1E9D;
+	--color-purple-light: #695A9D;
+	--color-gray: #4D4D4D;
+	--color-dark: #1A1A1A;
+}
+body
+{
+	background-color: var(--color-dark);
+}
+
+
+
+.container
+{
+	max-width: 1200px;
+	width: 100%;
+}
+
+
+
+
+h1.title
+{
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 0 0 0;
+	margin: 0 0 0;
+	color: var(--color-purple);
+	font-size: 4em;
+}
+h1.title span
+{
+	display: inline-table;
+	font-weight: 800;
+	color: white;
+	position: relative;
+}
+h1.title span svg
+{
+	position: absolute;
+	width: 100%;
+	top: -50px;
+	left: 0;
+	z-index: 0;
+	fill: var(--color-gray);
+}
+h1.title span strong
+{
+	z-index: 10;
+	position: relative;
+	font-weight: 800;
+}
+
+p.intro
+{
+	font-size: 1.2em;
+}
+
+
+
+
+
+header
+{
+	width: 100%;
+	max-height: 105px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 10000;
+	margin: 0 auto;
+	padding: 20px 0 10px;
+	background-color: white;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+header #header-logo img
+{
+	height: 75px;
+}
+header ul#header-nav
+{
+	list-style: none;
+	padding: 0 0 0;
+	margin: 0 0 0;
+	display: table;
+	float: right;
+}
+header ul#header-nav > li
+{
+	display: table-cell;
+	height: 62px;
+	vertical-align: middle;
+}
+header ul#header-nav > li > a
+{
+	background-color: white;
+	color: var(--color-dark);
+	padding: 5px 15px;
+	margin: 0 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+header ul#header-nav > li > a:hover
+{
+	background-color: var(--color-purple);
+	color: white;
+}
+header ul#header-nav > li:first-child > a
+{
+	margin-left: 0;
+}
+header ul#header-nav > li:last-child > a
+{
+	margin-right: 0;
+}
+
+
+
+
+
+section#hero
+{
+	background-color: var(--color-purple);
+	height: calc(100vh - 105px);
+	width: 100%;
+	display: block;
+	padding: 0 0 0;
+	margin: 105px auto 0;
+	position: relative;
+	overflow: hidden;
+}
+section#hero svg#hero_white_curve
+{
+	fill: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 200;
+}
+
+section#hero svg#hero_purple_curve
+{
+	fill: var(--color-purple-light);
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+}
+section#hero div#main-hero div.slide
+{
+	height: 100vh;
+	width: 100%;
+	display: table;
+	position: relative;
+	overflow: hidden;
+}
+section#hero div#main-hero div.slide div.slide-wrapper
+{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+section#hero div#main-hero div.slide h1
+{
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 0 0 0;
+	margin: 0 0 10px;
+	color: white;
+	font-size: 4em;
+}
+section#hero div#main-hero div.slide p
+{
+	font-size: 1.5em;
+	color: white;
+	line-height: 20px;
+	margin-bottom: 30px;
+	display: block;
+	width: 100%;
+}
+section#hero div#main-hero div.slide a
+{
+	background-color: white;
+	color: var(--color-purple);
+	padding: 5px 20px;
+	margin: 0 0;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+section#hero div#main-hero div.slide .container
+{
+	position: relative;
+	top: -12vh;
+}
+section#hero div#main-hero div.slide img
+{
+	height: 110vh;
+	position: absolute;
+	right: -400px;
+	top: -10vh;
+}
+
+
+
+
+section#program
+{
+	background-color: white;
+	padding: 50px 0;
+}
+section#program img
+{
+	width: 500px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+section#curriculum
+{
+	/*background-color: var(--color-purple);*/
+	padding: 200px 0 300px;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2d1e9d+0,695a9d+100 */
+	background: #2d1e9d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d1e9d 0%, #695a9d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #2d1e9d 0%,#695a9d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #2d1e9d 0%,#695a9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d1e9d', endColorstr='#695a9d',GradientType=0 ); /* IE6-9 */
+
+	position: relative;
+	overflow: hidden;
+}
+section#curriculum h1.title
+{
+	color: white;
+	text-align: center;
+}
+section#curriculum h1.title span
+{
+	color: var(--color-purple);
+}
+section#curriculum h1.title span svg
+{
+	top: -25px;
+	fill: white;
+}
+section#curriculum p.intro
+{
+	text-align: center;
+	max-width: 800px;
+	display: block;
+	margin: 0 auto;
+	color: white;
+}
+section#curriculum img
+{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+section#curriculum svg#curriculum_white_curve_top
+{
+	fill: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 200;
+}
+section#curriculum svg#curriculum_purple_curve_top
+{
+	fill: var(--color-purple-light);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+}
+section#curriculum svg#curriculum_white_curve_bottom
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+}
+section#curriculum svg#curriculum_white_curve_bottom path
+{
+	fill: white;
+}
+
+
+
+
+
+
+
+section#instructor
+{
+	background-color: white;
+	padding: 0 0 100px;
+}
+section#instructor img
+{
+	width: 500px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+section#instructor h1.title span svg
+{
+	top: -32px;
+}
+section#instructor p
+{
+	line-height: 12px;
+}
+
+
+
+
+
+
+.cta
+{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2d1e9d+0,695a9d+100 */
+	background: #2d1e9d; /* Old browsers */
+	background: -moz-linear-gradient(left,  #2d1e9d 0%, #695a9d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #2d1e9d 0%,#695a9d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #2d1e9d 0%,#695a9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d1e9d', endColorstr='#695a9d',GradientType=1 ); /* IE6-9 */
+	padding: 30px 0;
+}
+.cta .cta-wrapper
+{
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 50px 25px;
+	background-image: url(/images/cta/cta-bg.jpg);
+	background-repeat: no-repeat;
+}
+.cta .cta-wrapper p
+{
+	font-weight: 800;
+	font-size: 2.35em;
+	color: white;
+	text-align: center;
+}
+.cta .cta-wrapper p a
+{
+	background-color: var(--color-purple);
+	color: white;
+	font-size: .7em;
+	padding: 5px 18px 8px;
+	border-radius: 10px;
+	position: relative;
+	top: -3px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+.cta .cta-wrapper p a:hover
+{
+	color: var(--color-purple);
+	background-color: white;
+}
+
+
+section#location
+{
+	padding: 75px 0 0;
+	background-color: white;
+	position: relative;
+}
+section#location .heading-icon
+{
+	display: block;
+	margin: 0 auto 10px;
+	width: 55px;
+}
+section#location h1
+{
+	text-align: center;
+	font-size: 4em;
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 0 0 0;
+	margin: 0 0 15px;
+}
+section#location p.intro
+{
+	text-align: center;
+	max-width: 800px;
+	display: block;
+	margin: 0 auto;
+}
+section#location p.intro strong
+{
+	font-size: 1.1em;
+	padding-bottom: 10px;
+}
+section#location #map-wrapper
+{
+	height: 500px;
+	width: 100%;
+	margin-top: 50px;
+	position: relative;
+	z-index: 50;
+	display: block;
+}
+section#location svg#location_purple_curve_bottom
+{
+	fill: var(--color-purple);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+
+
+
+
+
+section#donations
+{
+	background-color: var(--color-purple);
+	padding: 75px 0 275px;
+	position: relative;
+}
+section#donations h1.title
+{
+	color: white;
+	text-align: center;
+}
+section#donations h1.title span
+{
+	color: var(--color-purple);
+}
+section#donations h1.title span svg
+{
+	top: -27px;
+	fill: white;
+}
+section#donations p.intro
+{
+	line-height: 20px;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: center;
+}
+section#donations svg#donations_purple_curve_bottom
+{
+	fill: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+
+
+
+
+
+
+
+
+section#contact
+{
+	background-color: white;
+	padding: 40px 0 75px;
+	position: relative;
+}
+section#contact h1.title
+{
+	color: var(--color-purple);
+	text-align: center;
+}
+section#contact h1.title span
+{
+	color: white;
+}
+section#contact h1.title span svg
+{
+	top: -25px;
+	left: -4px;
+	fill: var(--color-purple);
+}
+section#contact p.intro
+{
+	text-align: center;
+}
+section#contact #form
+{
+	max-width: 900px;
+	width: 100%;
+	display: block;
+	margin: 50px auto;
+}
+section#contact #form .form-control
+{
+	outline: none;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-appearance: none !important;
+	border-radius: 0;
+	border-bottom: 2px solid var(--color-purple) !important;
+	color: var(--color-purple);
+	font-size: 1.1em;
+	resize: none;
+	margin-bottom: 15px;
+}
+section#contact #form input[type=submit]
+{
+	background-color: #2d1e9d;
+	color: white;
+	font-size: 1.1em;
+	padding: 5px 18px 8px;
+	border-radius: 10px;
+	position: relative;
+	margin: 25px auto;
+	width: 100%;
+	max-width: 200px;
+	text-decoration: none;
+	border: 0;
+	display: block;
+	font-weight: 800;
+}
+section#contact svg#contact_purple_curve_bottom
+{
+	fill: var(--color-purple-light);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	max-width: 600px;
+	z-index: 100;
+}
+
+
+
+#message-success,
+#message-danger
+{
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	display: none;
+	width: 100%;
+	padding: 0 0 0;
+	margin: 10px auto;
+}
+
+#message-success
+{
+	color: #58A55C;
+}
+#message-danger
+{
+	color: #C53D2D;
+}
+
+
+
+
+
+footer
+{
+	padding: 50px 0;
+	position: relative;
+}
+footer #footer-logo
+{
+	width: 100%;
+	max-width: 250px;
+	display: block;
+	margin-top: 5px;
+}
+footer #footer-logo img
+{
+	width: 100%;
+}
+footer ul#footer-nav
+{
+	list-style: none;
+	padding: 0 0 0;
+	margin: 0 0 0;
+	display: table;
+	float: right;
+}
+footer ul#footer-nav > li
+{
+	display: table-cell;
+	height: 25px;
+	vertical-align: middle;
+}
+footer ul#footer-nav > li > a
+{
+	color: white;
+	padding: 5px 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+footer ul#footer-nav > li > a:hover
+{
+	background-color: var(--color-purple);
+	color: white;
+}
+footer ul#footer-nav > li:first-child > a
+{
+	margin-left: 0;
+}
+footer ul#footer-nav > li:last-child > a
+{
+	margin-right: 0;
+}
+footer p
+{
+	margin-right: 5px;
+}
+footer p,
+footer p a
+{
+	text-align: right;
+	color: white;
+	font-size: 1.1em;
+}
+footer p a:hover
+{
+	color: var(--color-purple-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

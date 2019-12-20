@@ -1,0 +1,231 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.hamburger
+	{
+		display: none !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+	section#hero div#main-hero div.slide img
+	{
+		right: -600px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.container
+	{
+		width: 100%;
+		max-width: 100%;
+		padding: 0 0 0;
+	}
+
+	header #header-logo img
+	{
+		height: 50px;
+	}
+	header ul#header-nav > li
+	{
+		height: 40px;
+	}
+	header ul#header-nav > li > a
+	{
+		padding: 5px 5px;
+		font-size: 1.1em;
+	}
+
+
+	section#hero
+	{
+		height: calc(100vh - 80px);
+		margin: 80px auto 0;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	header
+	{
+		padding: 10px 0 8px;
+	}
+
+
+	section#hero
+	{
+		height: calc(100vh - 68px);
+		margin: 68px auto 0;
+	}
+	section#hero div#main-hero div.slide h1,
+	section#location h1
+	{
+		font-size: 2.2em;
+	}
+	section#hero div#main-hero div.slide p
+	{
+		font-size: 1.1em;
+		margin-bottom: 20px;
+	}
+	section#hero div#main-hero div.slide a
+	{
+		font-size: 1.1em;
+	}
+
+
+	h1.title
+	{
+		font-size: 2.2em;
+	}
+
+
+	section#program
+	{
+		padding: 0 0 50px;
+	}
+	section#program h1.title
+	{
+		margin: 0 auto;
+		display: table;
+	}
+	section#program h1.title span svg
+	{
+		top: -32px;
+	}
+	section#program p.intro,
+	section#curriculum p.intro,
+	section#location p.intro,
+	section#donations p.intro
+	{
+		text-align: justify;
+	}
+
+
+	section#curriculum
+	{
+		padding: 100px 0 120px;
+	}
+	section#curriculum h1.title span svg
+	{
+		top: -16px;
+	}
+
+
+	section#instructor
+	{
+		padding: 0 0 25px;
+	}
+	section#instructor h1.title
+	{
+		margin: 0 auto;
+		display: table;
+	}
+	section#instructor h1.title span svg
+	{
+		top: -19px;
+	}
+	section#instructor p
+	{
+		line-height: 15px;
+		text-align: center;
+	}
+
+
+
+	.cta .container
+	{
+		padding: 0 15px;
+	}
+	.cta .cta-wrapper
+	{
+		padding: 20px;
+	}
+	.cta .cta-wrapper p
+	{
+		font-size: 1.2em;
+	}
+	.cta .cta-wrapper p a
+	{
+		background-color: white;
+		color: var(--color-purple);
+	}
+
+
+
+	section#donations
+	{
+		padding: 75px 0 100px;
+	}
+	section#donations h1.title span svg
+	{
+		top: -16px;
+	}
+
+
+
+	section#contact h1.title span svg
+	{
+		top: -16px;
+		left: 1px;
+	}
+
+
+	footer p,
+	footer p a
+	{
+		text-align: center;
+		color: white;
+		font-size: 1.1em;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
